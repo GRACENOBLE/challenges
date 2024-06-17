@@ -6,11 +6,13 @@ const page = () => {
   return (
     <div>
       <H1>Personal info</H1>
-      <div className="py-3"><P>Please add your name, email, address and phone number.</P></div>
-      
-      <form action="submit">
+      <div className="py-3">
+        <P>Please add your name, email, address and phone number.</P>
+      </div>
+
+      <form action="submit" autoComplete="off">
         <div className="flex flex-col gap-2">
-          <div className = "flex flex-col">
+          <div className="flex flex-col">
             <label htmlFor="" className="text-xs font-bold">
               Name
             </label>
@@ -20,7 +22,7 @@ const page = () => {
               placeholder=" e.g. Stephen King"
             />
           </div>
-          <div className = "flex flex-col">
+          <div className="flex flex-col">
             <label htmlFor="" className="text-xs font-bold">
               Email Address
             </label>
@@ -30,7 +32,7 @@ const page = () => {
               placeholder="e.g. stephenking@gmail.com"
             />
           </div>
-          <div className = "flex flex-col">
+          <div className="flex flex-col">
             <label htmlFor="" className="text-xs font-bold">
               Phone Number
             </label>
