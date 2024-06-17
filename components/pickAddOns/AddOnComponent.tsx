@@ -11,16 +11,22 @@ export default function AddOnComponent({
   description: string;
   price: string;
 }) {
+ 
   return (
-    <div className="border rounded px-1 py-2 flex justify-between">
+    <div
+      className={`border rounded px-1 py-2 flex justify-between hover:cursor-pointer `}
+    >
       <div className="flex gap-1 w-full">
-        <input type="checkbox" />
-        <div className="">
+        <input type="checkbox" id={title} className="hover:cursor-pointer" />
+        <label htmlFor={title} className="hover:cursor-pointer">
           <H2>{title}</H2>
           <p className="text-slate-300 text-xs">{description}</p>
-        </div>
+        </label>
       </div>
-      <P>{price}</P>
+      <label htmlFor={title} className=" hover:cursor-pointer">
+        <P>{price}</P>
+      </label>
+
       <div></div>
     </div>
   );
