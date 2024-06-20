@@ -1,6 +1,6 @@
 import H1 from "@/components/multiStepForm/H1";
 import P from "@/components/multiStepForm/P";
-import AddOnComponent from "@/components/pickAddOns/AddOnComponent";
+import AddOnComponent from "@/components/multiStepForm/AddOnComponent";
 import React from "react";
 
 export default function page() {

@@ -1,6 +1,6 @@
 import React from "react";
-import H2 from "../multiStepForm/H2";
-import P from "../multiStepForm/P";
+import H2 from "./H2";
+import P from "./P";
 
 export default function AddOnComponent({
   title,
@@ -11,7 +11,6 @@ export default function AddOnComponent({
   description: string;
   price: string;
 }) {
- 
   return (
     <div
       className={`border rounded px-1 py-2 flex justify-between hover:cursor-pointer `}
